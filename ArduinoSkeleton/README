@@ -16,6 +16,8 @@ Libraries (SPI, SD..) need to be added into the build path using
  * Uncheck checkboxes "Debug" and "Release", and click "Ok"
  * The library is now available.
  
+ By default, target hardware is the Arduino Mega 2560. See AVR project properties to change the target board.
+ 
  Fine tuning could be then made to only compile needed files. By default, giving all Arduino 
 basics create a bigger code than needed :)
  
