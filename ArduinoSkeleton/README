@@ -1,0 +1,27 @@
+/*
+ * Copyright (c) 2012 by Aurélien Labrosse <aurelien.labrosse@free.fr>
+ *
+ * This file is free software; you can redistribute it and/or modify
+ * it under the terms of either the GNU General Public License version 2
+ * or the GNU Lesser General Public License version 2.1, both as
+ * published by the Free Software Foundation.
+ */
+ 
+This project is a simple skeleton for Arduino projects made with AVR-Eclipse. 
+By default, compilation process will give you the whole Arduino basics.
+
+Libraries (SPI, SD..) need to be added into the build path using 
+ * Right click on library folder, in projects explorer
+ * Select "Resource configurations" then "Exclude from build.."
+ * Uncheck checkboxes "Debug" and "Release", and click "Ok"
+ * The library is now available.
+ 
+ Fine tuning could be then made to only compile needed files. By default, giving all Arduino 
+basics create a bigger code than needed :)
+ 
+ No optimization parameter is given to gcc-avr. It results in a warning :
+[...]/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed" 
+ So feel free to add such options if needed.
+ 
+ Arduino : http://arduino.cc/
+ AvrEclipse: http://avr-eclipse.sourceforge.net/wiki/index.php/The_AVR_Eclipse_Plugin
