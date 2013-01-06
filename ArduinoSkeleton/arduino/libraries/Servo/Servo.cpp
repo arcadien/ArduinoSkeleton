@@ -43,7 +43,7 @@
 */
 
 #include <avr/interrupt.h>
-#include "../../include/Arduino.h"
+#include <Arduino.h> 
 
 #include "Servo.h"
 

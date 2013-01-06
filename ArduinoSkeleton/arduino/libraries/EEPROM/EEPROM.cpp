@@ -21,9 +21,9 @@
  * Includes
  ******************************************************************************/
 
-#include "EEPROM.h"
-#include "../../include/Arduino.h"
 #include <avr/eeprom.h>
+#include "Arduino.h"
+#include "EEPROM.h"
 
 /******************************************************************************
  * Definitions

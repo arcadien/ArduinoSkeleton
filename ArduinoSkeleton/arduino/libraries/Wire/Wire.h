@@ -23,7 +23,7 @@
 #define TwoWire_h
 
 #include <inttypes.h>
-#include "../../include/Stream.h"
+#include "Stream.h"
 
 #define BUFFER_LENGTH 32
 
@@ -70,7 +70,7 @@ class TwoWire : public Stream
     inline size_t write(long n) { return write((uint8_t)n); }
     inline size_t write(unsigned int n) { return write((uint8_t)n); }
     inline size_t write(int n) { return write((uint8_t)n); }
-//    using Print::write;
+    using Print::write;
 };
 
 extern TwoWire Wire;

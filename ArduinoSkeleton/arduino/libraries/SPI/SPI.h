@@ -12,7 +12,7 @@
 #define _SPI_H_INCLUDED
 
 #include <stdio.h>
-#include "../../include/Arduino.h"
+#include <Arduino.h>
 #include <avr/pgmspace.h>
 
 #define SPI_CLOCK_DIV4 0x00

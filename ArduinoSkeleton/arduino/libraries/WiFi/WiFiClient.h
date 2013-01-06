@@ -1,9 +1,9 @@
 #ifndef wificlient_h
 #define wificlient_h
-#include "../../include/Arduino.h"
-#include "../../include/Print.h"
-#include "../../include/Client.h"
-#include "../../include/IPAddress.h"
+#include "Arduino.h"	
+#include "Print.h"
+#include "Client.h"
+#include "IPAddress.h"
 
 class WiFiClient : public Client {
 

@@ -2,7 +2,7 @@
 
 #include "server_drv.h"
 
-#include "../../../include/Arduino.h"
+#include "Arduino.h"
 #include "spi_drv.h"
 
 extern "C" {

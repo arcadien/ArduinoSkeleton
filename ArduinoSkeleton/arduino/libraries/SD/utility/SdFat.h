@@ -26,7 +26,7 @@
 #include <avr/pgmspace.h>
 #include "Sd2Card.h"
 #include "FatStructs.h"
-#include "../../../include/Print.h"
+#include "Print.h"
 //------------------------------------------------------------------------------
 /**
  * Allow use of deprecated functions if non-zero

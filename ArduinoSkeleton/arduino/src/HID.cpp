@@ -16,9 +16,9 @@
 ** SOFTWARE.  
 */
 
-#include "../include/Platform.h"
-#include "../include/USBAPI.h"
-#include "../include/USBDesc.h"
+#include "Platform.h"
+#include "USBAPI.h"
+#include "USBDesc.h"
 
 #if defined(USBCON)
 #ifdef HID_ENABLED

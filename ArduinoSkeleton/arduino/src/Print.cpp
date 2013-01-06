@@ -23,9 +23,9 @@
 #include <stdio.h>
 #include <string.h>
 #include <math.h>
-#include "../include/Arduino.h"
+#include "Arduino.h"
 
-#include "../include/Print.h"
+#include "Print.h"
 
 // Public Methods //////////////////////////////////////////////////////////////
 
@@ -225,11 +225,6 @@ size_t Print::printNumber(unsigned long n, uint8_t base) {
 size_t Print::printFloat(double number, uint8_t digits) 
 { 
   size_t n = 0;
-  
-  if (isnan(number)) return print("nan");
-  if (isinf(number)) return print("inf");
-  if (number > 4294967040.0) return print ("ovf");  // constant determined empirically
-  if (number <-4294967040.0) return print ("ovf");  // constant determined empirically
   
   // Handle negative numbers
   if (number < 0.0)

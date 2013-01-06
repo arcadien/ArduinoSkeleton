@@ -5,7 +5,7 @@
 
 #include <inttypes.h>
 
-#include "../../include/Arduino.h"	// for digitalRead, digitalWrite, etc
+#include <Arduino.h>	// for digitalRead, digitalWrite, etc
 
 
 // Normally Servo.h must be included before Firmata.h (which then includes

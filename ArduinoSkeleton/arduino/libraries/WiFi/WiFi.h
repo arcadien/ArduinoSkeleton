@@ -8,7 +8,7 @@ extern "C" {
 	#include "utility/wl_types.h"
 }
 
-#include "../../include/IPAddress.h"
+#include "IPAddress.h"
 #include "WiFiClient.h"
 #include "WiFiServer.h"
 

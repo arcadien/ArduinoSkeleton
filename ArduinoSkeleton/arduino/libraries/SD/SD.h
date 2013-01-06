@@ -15,12 +15,10 @@
 #ifndef __SD_H__
 #define __SD_H__
 
-#include "../../include/Arduino.h"
+#include <Arduino.h>
 
 #include "utility/SdFat.h"
 #include "utility/SdFatUtil.h"
-
-
 
 #define FILE_READ O_READ
 #define FILE_WRITE (O_READ | O_WRITE | O_CREAT)
@@ -33,7 +31,7 @@ class File : public Stream {
 public:
   File(SdFile f, const char *name);     // wraps an underlying SdFile
   File(void);      // 'empty' constructor
-  ~File(void);     // destructor
+  virtual  ~File(void);     // destructor
   virtual size_t write(uint8_t);
   virtual size_t write(const uint8_t *buf, size_t size);
   virtual int read();
@@ -52,6 +50,7 @@ public:
   File openNextFile(uint8_t mode = O_RDONLY);
   void rewindDirectory(void);
   
+  using Print::write;
 };
 
 class SDClass {
