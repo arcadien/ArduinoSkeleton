@@ -1,7 +1,5 @@
 
 
-// Arduino namespace begins in "arduino/" directory.
-// We need to prefix inclusion pathes
 #include <Arduino.h>
 
 
