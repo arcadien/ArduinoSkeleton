@@ -21,9 +21,7 @@ Libraries (SPI, SD..) need to be added into the build path using
  Fine tuning could be then made to only compile needed files. By default, giving all Arduino 
 basics create a bigger code than needed :)
  
- No optimization parameter is given to gcc-avr. It results in a warning :
-[...]/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed" 
- So feel free to add such options if needed.
- 
- Arduino : http://arduino.cc/
- AvrEclipse: http://avr-eclipse.sourceforge.net/wiki/index.php/The_AVR_Eclipse_Plugin
+
+ Arduino                  : http://arduino.cc/
+ AvrEclipse               : http://avr-eclipse.sourceforge.net/wiki/index.php/The_AVR_Eclipse_Plugin
+ Using Arduino in Eclipse : http://playground.arduino.cc/Code/Eclipse#Eclipse_Arduino_core_library
